@@ -1,0 +1,3 @@
+function sniff () {
+     sudo tshark -R 'http' -S -V -l -i $1| awk '/^[HL]/ {p=30} /^[^ HL]/ {p=0} /^ / {--p} {if (p>0) print}'
+}

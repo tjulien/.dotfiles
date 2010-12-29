@@ -1,0 +1,11 @@
+function json () {
+    python -m json.tool
+}
+
+function html () {
+    python -m html.tool
+}
+
+function xml () {
+    python -m xml.tool
+}

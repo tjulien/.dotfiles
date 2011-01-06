@@ -1,4 +1,6 @@
 . ~/.dotfiles/.pretty
 . ~/.dotfiles/.sniff
+
 export PS1="\h:\W \[\033[31m\]\`ruby -e \"print (%x{git branch 2> /dev/null}.grep(/^\*/).first || '').gsub(/^\* (.+)$/, '(\1) ')\"\`\[\033[00m\]$ "
 
+export EDITOR=emacs
